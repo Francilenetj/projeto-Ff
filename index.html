@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<link rel="stylesheet" href="style.css">
+   <style>
+
+   </style>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>touch<i class="fas fa-scanner-touchscreen    "></i></title>
+</head>
+<body>
+    <div class="box">
+        <p>VOCÊ SE ACHA GOSTOSE</p>
+        <div class="buttons-container">
+            <button>
+                <a href="https://www.youtube.com/watch?v=ykIYEcpDxFQ">SIM</a>
+            </button>
+            <button id="no">NÃO</button>
+        </div>
+    </div>
+
+</body>
+<script>
+let button=document.getElementById('no');
+let height = window.innerHeight-50;
+let width = window.innerHeight -50;
+
+button.addEventListener('mouseover', function(){
+    button.style.position = "absolute";
+    button.style.top =Math.random()*height + "px";
+    button.style.left =Math.random()* width + "px";
+})
+</script>
+</html>
+
